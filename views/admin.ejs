@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Playlist</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li>
+            <a href="/"><img src="/img/logoblue.png" alt="Logo da Blue"></a>
+        </li>
+        <li>
+            <a href="/"><i class="bi bi-box-arrow-right"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+  <section id="add">
+    <h2>Cadastre uma nova música</h2>
+    
+    <form action="/create" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name">
+
+    <label for="name">Autor:</label>
+    <input type="text" name="author" id="author">
+  
+    <label for="name">Link da imagem:</label>
+    <input type="text" name="linkImage" id="linkImage">
+
+    <label for="linkMusic">Link da Música:</label>
+    <input type="text" name="linkMusic" id="linkMusic">
+    
+    
+    <button type="submit">Cadastrar</button>
+  </form>
+  </section>
+  
+  <section id="player">
+   
+    <h2>Gerenciar Músicas</h2>
+    
+      <div>
+          <table>
+              <thead>
+                    <tr>
+                        <th></th>
+                        <th>Nome</th>
+                        <th>Artista</th>
+                        <th></th>
+                        <th></th><th></th>
+                      </tr>
+                    </thead>
+
+                <tbody>
+
+                    <% playlist.forEach((music)=> { %>
+                        <tr class="musics">
+                            <td><img src="<%= music.linkImage %>" alt="Imagem da musica"></td>
+                            <td>
+                                <%= music.name %>
+                            </td>
+                            <td>
+                                <%= music.author %>
+                            </td>
+                            <td>
+                                <audio controls class="audio " src="<%= music.linkMusic %>"></audio>
+                            </td>
+                            <td class="actions">
+                              <a href="#" class="removeMusic">Remover</i></a>
+                             
+                            </td>
+                            <td class="actions"> 
+                              <a href="#"  class="editMusic" id="edit">Editar</i></a>
+                            </td>
+                            
+  
+                           
+                        </tr>
+                        <% }) %>
+                </tbody>
+
+            </table>
+        </div>
+  </section>
+
+</body>
+</html>

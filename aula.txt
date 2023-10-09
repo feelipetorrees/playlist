@@ -1,0 +1,98 @@
+Criação do repositorio
+
+Licença Mozilla
+
+
+Terminal
+
+npm init: iniciar o node
+
+
+json.js
+
+
+scripts
+
+"start"
+"dev"
+
+nodemon 
+
+nodemon é uma ferramenta que ajuda a desenvolver aplicativos baseados em Node.js, reiniciando automaticamente o aplicativo do nó quando são detectadas alterações no arquivo no diretório
+
+
+express:
+
+A filosofia do Express é fornecer ferramentas pequenas e robustas para servidores HTTP, tornando-o uma ótima solução para aplicativos de página única, sites, híbridos ou APIs HTTP públicas.
+
+ejs:
+
+Codigo js em HTML
+
+mongoose
+
+Reponsável por fazer ligações com banco de dados
+
+crud:
+
+ sigla CRUD é um acrônimo, de quatro operações básicas, são elas:
+
+C: Create – Criar um novo registro.
+
+R: Read – Ler um registro, ou uma lista de registros.
+
+U: Update – Atualizar um registro.
+
+D: Delete – Excluir um registro.
+
+dotenv:
+
+Dotenv é um módulo de dependência zero que carrega variáveis ​​de ambiente de um .env , arquivo em process.env. O armazenamento da configuração no ambiente separado do código é baseado na metodologia The Twelve-Factor App .
+
+
+responsavel por esconder dados sensiveis, 
+
+
+get:
+
+um dos metodos HTTP para a comunicação entre servidor e cliente, ele pega uma informação
+
+
+alem de criar o database iremos criar uma pasta folder model que sera a o modelo do banco de dados
+
+
+connection string :
+
+Uma string de conexão é uma cadeia de caracteres que contém informações necessárias para estabelecer uma conexão com um banco de dados ou outro serviço de armazenamento de dados. Essa string contém detalhes, como o nome do servidor, a porta, as credenciais de acesso (como nome de usuário e senha) e outras informações de configuração necessárias para que um aplicativo se conecte a um banco de dados ou a um serviço de dados.
+
+MongoDb: MongoDB reuni dados com documentos, e todos os documentos reunidos forma coleções
+
+
+Model : Como os nossos dados vão ser gravados,qual e nome dos campos, tipos dos campos etc.
+
+Schema: nome padrão para modelo de banco de dados
+
+ 
+Rotas:
+O que são: Rotas são os caminhos ou URLs que os clientes usam para acessar recursos específicos em um servidor web ou em uma API. Elas são responsáveis por direcionar uma solicitação HTTP para o código ou manipulador apropriado na aplicação.
+
+Exemplo: Em uma aplicação web, você pode ter uma rota como "/página-inicial" que corresponde à página inicial do site. Em uma API, uma rota pode ser "/api/usuarios" para acessar recursos relacionados a usuários.
+
+Configuração: Em muitos frameworks web, como Express.js (Node.js), Flask (Python), ou Ruby on Rails (Ruby), você define rotas usando código para mapear URLs específicos para funções ou controladores que manipulam as solicitações correspondentes.
+
+
+endpoits:
+
+O que são: Endpoints são os pontos de extremidade ou locais específicos dentro de uma rota onde as solicitações são tratadas. Em outras palavras, eles são as operações específicas que podem ser executadas em uma rota.
+
+Exemplo: Se você tem uma rota "/api/usuarios", os endpoints podem ser "/api/usuarios/listar" para listar todos os usuários, "/api/usuarios/criar" para criar um novo usuário e "/api/usuarios/1" para acessar informações do usuário com o ID 1.
+
+Implementação: Os endpoints são implementados como funções ou métodos que executam uma ação específica quando uma solicitação é feita para aquele ponto de extremidade. Eles são responsáveis por processar a solicitação, interagir com o banco de dados (se necessário) e retornar uma resposta adequada.
+
+
+View engine: 
+
+
+
+
+

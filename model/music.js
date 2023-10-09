@@ -28,6 +28,6 @@ const musicSchema = new mongoose.Schema({
 
 });
 
-// Com o esquema do DB criamos vamos agora, criar um model para esse DB
+// Com o esquema do DB criado vamos agora, criar um model para esse DB
 module.exports = mongoose.model("Music", musicSchema);
 
